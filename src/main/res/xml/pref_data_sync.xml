@@ -1,0 +1,44 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <EditTextPreference
+        android:defaultValue="HomeScreenActivity.HName"
+        android:id="@+id/ip_address"
+        android:inputType="numberDecimal"
+        android:key="ip_address"
+        android:maxLines="1"
+        android:selectAllOnFocus="true"
+        android:singleLine="true"
+        android:title="@string/pref_title_ip_address" />
+
+    <EditTextPreference
+        android:defaultValue="HomeScreenActivity.UName"
+        android:inputType="textCapWords"
+        android:key="pi_username"
+        android:maxLines="1"
+        android:selectAllOnFocus="true"
+        android:singleLine="true"
+        android:title="@string/pref_title_pi_username" />
+
+    <EditTextPreference
+        android:defaultValue="HomeScreenActivity.PWord"
+        android:inputType="textPassword"
+        android:key="pi_password"
+        android:maxLines="1"
+        android:selectAllOnFocus="true"
+        android:singleLine="true"
+        android:title="@string/pref_title_pi_password" />
+
+    <EditTextPreference
+        android:defaultValue="HomeScreenActivity.Port"
+        android:inputType="number"
+        android:key="pi_port"
+        android:maxLines="1"
+        android:selectAllOnFocus="true"
+        android:singleLine="true"
+        android:title="@string/pref_title_pi_port" />
+
+    <Preference android:title="@string/pref_title_wireless_settings">
+        <intent android:action="android.settings.WIRELESS_SETTINGS" />
+    </Preference>
+
+</PreferenceScreen>
